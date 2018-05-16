@@ -2,7 +2,7 @@ from com.inheritance1.Animal import Animal
 
 
 class Dog(Animal):
-    def ___init__(self, name1):
+    def ___init__(self, name1):                 # constructor with three underscores
         print("constructor from dog")
         self.name1 = name1
 
