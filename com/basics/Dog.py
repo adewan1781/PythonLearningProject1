@@ -5,12 +5,15 @@ class Dog:
 
     legs = 0
     breed= ""
-    count = 0
+    count1 = 0
 
     def __init__(self,legs,breed,count):
         self.legs = legs
         self.breed = breed
-        self.count = count
+        count1 = count
+        print(Dog.count1)
+        print(count1)
+        print(self.count1)
 
     def requiredFood(self):
         print("Total number of bones required", self.count*4)
@@ -19,3 +22,4 @@ class Dog:
         print("There are ",self.count, " dogs of breed ", self.breed, " with age 3")
 
 
+obj = Dog(4,"lll",700)
