@@ -7,13 +7,21 @@ class PDict:
         dictionary = {'name': 'charlie', 'id': 100, 'dept': 'it'}
         print(dictionary.keys())
         print(dictionary.values())
-        dict2 = {1:"aaa",2:"bbb",3:"ccc"}
+
+        for key in dictionary:
+            print(key," ",dictionary.get(key))
+
+        # for key in dictionary.keys():
+        #     print("We are geting value ",dictionary.get(key))
+
+        dict2 = {1: "aaa", 2: "bbb", 3: "ccc"}
         print(dict2.keys())
         print(dict2.get(2))
         print("hello\nuser")
         list = ['aman', 678, 20.4, 'saurav']
+        print(list)
         list[0] = "amit"
-        print(list[1:3])
+        print(list[1:9])
         print(list)
 
     @staticmethod
