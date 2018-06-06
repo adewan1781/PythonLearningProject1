@@ -4,6 +4,10 @@ class PDict:
     b = False
 
     def show(self):
+        value = 'shyammohan'
+        for char in value:
+            print("prints each alphabet ", char)
+
         dictionary = {'name': 'charlie', 'id': 100, 'dept': 'it'}
         print(dictionary.keys())
         print(dictionary.values())
@@ -19,7 +23,17 @@ class PDict:
         print(dict2.get(2))
         print("hello\nuser")
         list = ['aman', 678, 20.4, 'saurav']
+        i=0
+        while (i<list.__len__()):
+            print("Inwhile loop: ",list[i])
+            i=i+1
+        j=0
+        while (j<list.__len__() and list[j]!=None):
+            print("In second while loop: ", list[j])
+            j = j + 1
+
         print(list)
+        print(list[list.__len__()-1])
         list[0] = "amit"
         print(list[1:9])
         print(list)
