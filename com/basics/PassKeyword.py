@@ -7,6 +7,11 @@ class PassKeyword:
                 print( "Pass when value is", i)
             print(i)
 
+        str = '  Mahesh  Guru    .'
+        print(str)
+        print(str.rstrip())
+        # print(str[6:0] + str[0:6])
+
     def show1(self):
         string1='pythonvsjava'
         print(string1[4])
@@ -20,4 +25,4 @@ class PassKeyword:
 
 if __name__ == '__main__':
     obj = PassKeyword()
-    obj.show1()
+    obj.show()
