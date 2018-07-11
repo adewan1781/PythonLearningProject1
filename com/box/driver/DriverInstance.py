@@ -1,12 +1,19 @@
 from selenium import webdriver
 
 class DriverInstance:
+    # Here will be the instance stored.
     __webDriver = None
 
     def __init__(self):
-        DriverInstance.__webDriver = webdriver.Firefox()
+        """ Virtually private constructor. """
+        if DriverInstance.__webDriver != None:
+            raise Exception ("This class is a singleton!")
+        else:
+            DriverInstance.__webDriver = self
 
     @staticmethod
     def getWebdiver():
-        DriverInstance.__webDriver = webdriver.Firefox()
+        if DriverInstance.__webDriver == None:
+            DriverInstance.__webDriver = webdriver.Firefox()
         return DriverInstance.__webDriver
+
