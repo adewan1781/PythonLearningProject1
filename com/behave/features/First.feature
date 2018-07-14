@@ -1,6 +1,6 @@
-Feature: The dealer for the game of 21
+Feature: Add scenarios
 
-  Scenario: Deal initial cards
-  Given a dealer
-  When the round starts
-  Then the dealer gives itself two cards
+  Scenario: addition  of two numbers
+  Given two nos a and b
+  When I add two numbers
+  Then the sum must be greater than ten
